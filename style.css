@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  
+    color: #ededed;
+}
+
+.header{
+    position: fixed;
+    top:20;
+    left:0;
+    color:#ededed;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header a:hover,
+.header a.active{
+   color: #01e2fb;
+}
+
+
+ .logo {
+   position: relative;
+    font-size: 50px;
+    color:#ededed;
+    /*color:#ff8400;*/
+    text-decoration: nome;
+    font-weight: 600;
+    transition: .3s;
+ }
+
+.logo :hover,
+.logo .activelogo{
+   color: #ff8400;
+} 
+
+ .logo::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   animation: showright 1s ease forwards;
+   animation-delay: .4s;
+}
+
+
+.navbar a{
+   font-size: 20px;
+   color:#ededed;
+   text-decoration: nome;
+   font-weight: 500;
+   height: 100%; 
+   margin-left: 35px;
+   transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+   color: #01e2fb;
+}
+
+
+
+ .home {
+    height: 100vh;
+    background: rgb(255, 255, 255) url('IA.jpg') no-repeat ;
+    background-size: cover;
+    background-position: left;
+    display:flex;
+    color:#ffffff;
+    align-items: center;
+    padding: 0 10%;
+ }
+
+ .home-content {
+    max-width: 600px;
+ }
+
+ .home-content h1 {
+   position: relative;
+   font-size: 40px;
+   
+   font-weight: 700;
+   line-height: 1.2;
+}
+
+.home-content h1::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background: black;
+   opacity: 0.3;
+   animation: showright 1s ease forwards;
+   animation-delay: .4s;
+}
+
+.home-content h1:hover,
+.home-content h1.active{
+   color: #01e2fb;
+}
+.home-content h3 {
+   font-size: 32px;
+   font-weight: 700;
+   color:#ffffff;
+}
+
+.home-content h3:hover,
+.home-content h3.active{
+   color: #01e2fb;
+}
+.home-content p {
+   font-size: 16px;
+   font-weight: bold;
+   color: #ffffff;
+   margin: 20px 0 40px;
+   
+}
+
+.home-content p:hover,
+.home-content p.active{
+   color: #01e2fb;
+}
+
+.home-content .btn-box{
+display:flex;
+justify-content: space-between;
+width: 345px;
+height: 50px;
+
+}
+
+
+.btn-box a{
+   position: relative;
+   display:inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 100%;
+   background: transparent;
+   border: 2px solid #01e2fb;
+   border-radius: 8px;
+   font-size: 19px;
+   color:#01e2fb;
+   text-decoration: none;
+   font-weight: 600;
+   letter-spacing: 1px;
+   z-index: 1;
+   overflow: hidden;
+   transition: .5s;
+   }
+
+   .btn-box a:hover{
+   color: #081b29;
+   }
+   
+   .btn-box a:nth-child(2){
+     background: transparent;
+      color: #01e2fb ;
+   }
+
+   .btn-box a:nth-child(2):hover{  
+      color: #081b29;
+   }
+
+   .btn-box a:nth-child(2)::before{  
+      background: #01e2fb; 
+      
+   }
+
+   .btn-box a::before{
+      content:'';
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #01e2fb;
+      z-index: -1;
+      transition: .5s;
+   }
+
+   .btn-box a:hover::before{
+      width: 100%;  
+      
+   }
+
+   /* Estilo para el botón de inicio de sesión y el formulario */
+.login-form {
+   display: none; /* Inicialmente oculto */
+   position: absolute;
+   top: 150px; /* Ajusta según la posición deseada */
+   left: 50%;
+   transform: translateX(-50%);
+   background: #fff; /* Color de fondo blanco */
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 5px 15px #055f69(0,0,0,0.1);
+}
+
+.login-form h3 {
+   margin-bottom: 20px;
+   color: #055f69; /* Color del texto */
+}
+
+.login-form label {
+   display: block;
+   margin-bottom: 5px;
+   color: #055f69; /* Color del texto */
+}
+
+.login-form input {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.login-form button {
+   width: 100%;
+   padding: 10px;
+   background: #055f69; /* Color de fondo del botón */
+   color: #fff; /* Color del texto del botón */
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.login-form button:hover {
+   background:#055f69; /* Color de fondo del botón al pasar el cursor */
+}
+
+
+   .home-sci {
+      position:absolute;
+      bottom: 40px;
+      width: 170px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .home-sci a {
+      position:relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border:2px solid #01e2fb;
+      border-radius: 50%;
+      font-size: 20px;
+      color: #01e2fb;
+      text-decoration: none;
+      z-index: 1;
+      overflow: hidden;
+   }
+
+   .home-sci a:hover{
+      color: #081b29;
+      }
+
+      .home-sci a::before{
+         content:'';
+         position: absolute;
+         top:0;
+         left: 0;
+         width: 0;
+         height: 100%;
+         background: #01e2fb;
+         z-index: -1;
+         transition: .5s;
+      }
+
+      .home-sci a:hover::before{
+         width: 100%;  
+      }
+      .home-imghover{
+      position: absolute;
+      top: 0;
+      right: 0px;
+      width: 1020px;
+      height: 100%;
+      background: transparent;
+      transition: 3s;
+      }
+
+      .home-imghover:hover{
+      background: black;
+      opacity: 0.5;
+
+      }
+
+      .box {
+         position:-webkit-stickyre;
+         width: 250px;
+         height: 100%; 
+     }
+     
+     .locked {
+    display: none;
+}
+     .dropdown {
+         position: relative;
+         width: 100%;
+         height: 100%; 
+         background: transparent;
+
+         color: #01e2fb;
+         font-size: 22px;
+         font-weight: bold;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 5px;
+         cursor: pointer;
+         box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+     }
+
+     .dropdown  :hover {
+      font-size: 22px;
+      color:#081b29;
+      background: transparent;
+  }
+     
+     .dropdown .left-icon,
+     .dropdown .right-icon {
+         position: relative;
+         top: 2px;
+         display: inline-block;
+         width: 20px;
+         height: 5px;
+         background: #01e2fb;
+         border-radius: 40px;
+         transition: .5s;
+     }
+     
+     .dropdown .left-icon {
+         left: 7px;
+         transform: rotate(45deg);
+     }
+     
+     .dropdown.active .left-icon {
+         transform: rotate(135deg);
+     }
+     
+     .dropdown .right-icon {
+         transform: rotate(-45deg);
+     }
+     
+     .dropdown.active .right-icon {
+         transform: rotate(-135deg);
+     }
+     
+     .dropdown .items {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 160px;
+         margin-top: 63px;
+         overflow: auto 1,8;
+         visibility: hidden;
+         transition: .5s;
+     }
+     
+     .dropdown.active .items {
+         visibility: visible;
+     }
+     
+     .dropdown .items a {
+         position: relative;
+         left: 100%;
+         display: flex;
+         font-size: 20px;
+         background: transparent;
+         
+         
+         color: #01e2fb;
+         text-decoration: none;
+         border-radius: 5px;
+         padding: 10px 15px;
+         margin-top: 2.5px;
+         z-index: 1;
+         overflow: hidden;
+         transition: .5s;
+         transition-delay: calc(45ms * var(--i));
+     }
+     
+     .dropdown.active .items a {
+         left: 0;
+     }
+     
+     .dropdown .items a:hover {
+         color: white;
+     }
+     
+     .dropdown .items a span {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background:hsl(193, 100%, 22%);
+         z-index: -1;
+         border-radius: inherit;
+         transform: rotate(160deg);
+         transform-origin: right;
+         transition: .5s;
+     }
+     
+     .dropdown .items a:hover span {
+         transform: rotate(0deg);
+     }
+
+     .About{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap:2rem;
+      background:black; /*var(--second-bg-color);*/
+      padding: 10rem; 
+     }
+
+     .heading{
+      font-size: 5rem;
+      margin-bottom: 4rem;
+      color: hsl(193, 100%, 22%);
+      text-align: center;
+
+     }
+
+     .About-img {
+      position: relative;
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+     }
+
+     .About-img img{
+      width: 90%;
+      border-radius: 50%;
+      border:.2rem solid hsl(193, 100%, 22%);
+
+     }
+    
+     .About-img .circle-spin
+     {
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(0);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border-top: .2rem solid black;
+      border-bottom: .2rem solid black;
+      border-left: .2rem solid #01e2fb;
+      border-right: .2rem solid #01e2fb;
+      animation: aboutSpinner 8s linear infinite;
+     }
+
+     .About-content{
+      text-align: center;
+      font-size: 23px;
+      color: #01e2fb;
+     }
+
+     .Let{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap:2rem;
+      background:black; /*var(--second-bg-color);*/
+      padding: 20rem; 
+     }
+
+     .heading{
+      font-size: 5rem;
+      color: #01e2fb;
+      margin-bottom: 3rem;
+      text-align: center;
+
+     }
+
+     .Let-content{
+      text-align: center;
+      font-size: 25px;
+      color: #01e2fb;
+     }
+
+     .conclusion{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap:2rem;
+      background:black; /*var(--second-bg-color);*/
+      padding: 20rem; 
+     }
+
+     .heading{
+      font-size: 5rem;
+      color: #01e2fb;
+      margin-bottom: 3rem;
+      text-align: center;
+
+     }
+
+     .conclusion-content{
+      text-align: center;
+      font-size: 25px;
+      color: #01e2fb;
+     }
+
+
+
+      /*KEYFRAMES ANIMATION*/
+      @keyframes showright{
+         100% {
+            width: 0;
+         }
+      }
+      @keyframes aboutSpinner {
+         100%{
+         transform: translate(-50%, -50%) rotate(360deg);
+      }
+   }

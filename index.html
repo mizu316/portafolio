@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO TECNOLÓGICO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+       <a href ="#" class="logo" class="activelogo">PORTAFOLIO TECNOLÓGICO</a>
+       <nav class="navbar">
+        
+        <a href ="contenido y eva/Contenido de la Asignatura Seguridad Informatica.pdf" target="_blank" >Contenido</a>
+        <a href ="contenido y eva/Evaluacion Semestral de Seguridad Informática.pdf" target="_blank" >Evaluación</a>
+        <a href ="#" onclick="abrirEnlaces1()"> Material de Apoyo </a>
+        <a href ="proyectos/Instructivo para Crear el Portafolio Tecnologico.pdf" target="_blank">Portafolio</a>
+    </nav>
+    <div class="box">
+        <div class="dropdown">Actividades
+            <span class="left-icon"></span>
+            <span class="right-icon"></span>
+            <div class="items">
+                <a href ="#" onclick="abrirEnlaces5()" style="--i:2;"><span></span>Investigación #1</a>
+                <a href ="#" onclick="abrirEnlaces4()"style="--i:8;"><span></span>Investigación #2</a>
+                <a  href="#" onclick="abrirEnlaces9()" style="--i:4;"><span></span>Parcial #1</a>
+                <a  href="#" onclick="abrirEnlaces0()" style="--i:4;"><span></span>Parcial #2</a>
+                <a href ="#" onclick="abrirEnlaces7()"style="--i:3;"><span></span>Proyecto #1</a>
+                <a href ="#" onclick="abrirEnlaces8()" style="--i:5;"><span></span>Proyecto #2</a>
+                <a href ="#" onclick="abrirEnlaces6()" style="--i:1;"><span></span> Taller</a>
+                <a href ="#" onclick="abrirEnlaces2()" style="--i:6;"><span></span>Laboratorio #1</a>
+                <a href ="#" onclick="abrirEnlaces3()" style="--i:7;"><span></span>Aportes</a>
+                   <!--   -->
+                <a href ="#conclusion" style="--i:9;"><span></span>Conclusiones</a>
+            </div>
+        </div>
+    </div>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Seguridad Informática</h1>
+            <h3>Jesús Noel Del Cid.</h3>
+            <P>
+                Universidad Autonóma de Chiriquí <br>
+                Licentura en Gestión de Tecnología de Información <br>
+            </P>
+            <div class="btn-box">
+                <a href="#About" > About</a>
+                <a href="#Let"> Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="www.linkedin.com/in/jesus-del-cid-6748b974" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <span class ="home-imghover"> </span>
+    </section>
+    <script src="script.js"></script>
+
+    
+    <!-- section about-->
+<section class="About" id="About">
+<h2 class="heading"> About <span>me</span></h2>
+<div class="About-img">
+    <img src="yo.jpg" alt="">
+    <span class="circle-spin"></span>
+</div>
+<div class="About-content">
+<h3> Estudiante!</h3>
+<p>
+    Me llamo Jesús Noel Del Cid soy estudiante de la Licenciatura en Gestión de Tecnologías de Información.<br>
+    Tengo 36 años, actualmente laboro como captador de datos para una empresa local.
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+</p>
+</div>
+</section>
+
+   <!-- section hablemos-->
+   <section class="Let" id="Let">
+   <h2 class="heading"> Let's <span>Talk</span></h2>
+   
+    <div class="Let-content">
+    <h3> Contact Me!</h3>
+    <p>
+        
+        Telefono: 64727645<br>
+        E-mail: jesus.delcid@unachi.ac.pa<br>
+
+    </p>
+    </div>
+    </section>
+
+    <!-- section hablemos-->
+   <section class="conclusion" id="conclusion">
+    <h2 class="heading"><span>Conclusión</span></h2>
+    
+     <div class="conclusion-content">
+     <h3> La Experiencia!</h3>
+     <p>
+         
+        "El proceso de desarrollar este proyecto en seguridad informática ha sido increíblemente enriquecedor.
+         No solo me ha dado una gran satisfacción, sino que también ha sido muy constructivo. Ha sido una oportunidad única
+          para repasar y aplicar habilidades previas que había aprendido, mientras me ha permitido seguir aprendiendo de manera
+           constante y dinámica a medida que avanzaba en el proyecto. Esta experiencia ha sido una combinación perfecta entre reforzar
+            lo que ya sabía y aprender nuevas herramientas y enfoques de forma simultánea."
+     </p>
+     </div>
+     </section>
+
+<script>
+    function abrirEnlaces1() {
+        // Array de enlaces que quieres abrir
+        var enlaces1 = [
+            'material/Objetivos de la Seguridad Informática.pdf',
+            
+            
+
+            // Agrega más enlaces según sea necesario
+        ];
+        // Itera sobre cada enlace y ábrelo en una nueva ventana o pestaña
+        for (var i = 0; i < enlaces1.length; i++) {
+            window.open(enlaces1[i]);
+        }
+    }
+</script>
+
+<script>
+    function abrirEnlaces2() {
+        // Array de enlaces que quieres abrir
+        var enlaces2 = [
+            'laboratorios/lab1/laboratorio 1.pdf',
+            'laboratorios/lab1/IMG-20241121-WA0007.jpg',
+            'laboratorios/lab1/IMG-20241121-WA0006.jpg'
+            
+            // Agrega más enlaces según sea necesario
+        ];
+        // Itera sobre cada enlace y ábrelo en una nueva ventana o pestaña
+        for (var i = 0; i < enlaces2.length; i++) {
+            window.open(enlaces2[i]);
+        }
+    }
+</script>
+
+<script>
+    function abrirEnlaces3() {
+        var enlaces3 = [
+            
+            'aportes/Nueva carpeta/avast 8.jpg',
+            'aportes/Nueva carpeta/avast 7.jpg',
+            'aportes/Nueva carpeta/avast 6.jpg',
+            'aportes/Nueva carpeta/avast 5.jpg',
+            'aportes/Nueva carpeta/avast 4.jpg',
+            'aportes/Nueva carpeta/avast 3.jpg',
+            'aportes/Nueva carpeta/avast 2.jpg',
+            'aportes/Nueva carpeta/avast 1.jpg',
+        ];
+        for (var i = 0; i < enlaces3.length; i++) {
+            window.open(enlaces3[i]);
+        }
+    }
+</script>
+
+<script>
+    function abrirEnlaces4() {
+        var enlaces4 = [
+            'investigacion/investigacion2/Antispyware.pdf',
+            'investigacion/investigacion2/Investigación No. 2 Herramientas de Seguridad.pdf'
+        ];
+        for (var i = 0; i < enlaces4.length; i++) {
+            window.open(enlaces4[i]);
+        } 
+    }
+</script>
+
+<script>
+    function abrirEnlaces5() {
+        var enlaces5 = [
+            'investigacion/investigacion1/INV1SINFJESÚSDELCID.pdf',
+            'investigacion/investigacion1/instrucciones_investigacion1.pdf'
+            
+            
+        ];
+        for (var i = 0; i < enlaces5.length; i++) {
+            window.open(enlaces5[i]);
+        }
+    }
+</script>
+
+<script>
+    function abrirEnlaces6() {
+        var enlaces6 = [
+            'taller/Resumen Cesi.pdf',
+            'taller/Taller deSeguridad Informatica Conferencias del Congreso CESI2024.pdf'
+            
+        ];
+        for (var i = 0; i < enlaces6.length; i++) {
+            window.open(enlaces6[i]);
+        } 
+    }
+</script>
+
+<script>
+    function abrirEnlaces7() {
+        var enlaces7 = [
+            'proyectos/proyecto1/cibercrimen.pdf',
+            'proyectos/proyecto1/Proyecto No 1 Temas de Investigación de Vulnerabilidades Informaticas.pdf'
+            
+        ];
+        for (var i = 0; i < enlaces7.length; i++) {
+            window.open(enlaces7[i]);
+        }
+    }
+</script>
+
+<script>
+    function abrirEnlaces8() {
+        var enlaces8 = [
+            'https://www.canva.com/design/DAGWN5AdBFs/eD6lBGLF4Am0MGcQ9eQQZA/edit?utm_content=DAGWN5AdBFs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+            'proyectos/proyecto2/Proyecto No 2 Herramientas de Investigación y sus Usos.pdf'
+            
+        ];
+        for (var i = 0; i < enlaces8.length; i++) {
+            window.open(enlaces8[i]);
+        }   
+    }
+</script>
+
+<script>
+function abrirEnlaces9() {
+    var enlaces9 = [
+            'aportes/IMG-20241121-WA0000.jpg',
+            'aportes/IMG-20241121-WA0001.jpg',
+            'aportes/IMG-20241121-WA0002.jpg',
+            'aportes/IMG-20241121-WA0003.jpg',
+        'parciales/Parcial 1/Presentación.pdf',
+        'parciales/Parcial 1/Parcial No 1 IIa Parte Investigacion de Temas Protocolos y Herramientas-1.pdf'
+        
+        
+    ];
+    for (var i = 0; i < enlaces9.length; i++) {
+        window.open(enlaces9[i]);
+    }
+}
+</script>
+
+<script>
+    function abrirEnlaces0() {
+        var enlaces0 = [
+            'parciales/parcial2/document .pdf',
+            'parciales/parcial2/P2IngSoftJesúsDelCidPRE .pdf'
+            
+        ];
+        for (var i = 0; i < enlaces0.length; i++) {
+            window.open(enlaces0[i]);
+        }
+    }
+</script> 
+
+</body>
+</html>
